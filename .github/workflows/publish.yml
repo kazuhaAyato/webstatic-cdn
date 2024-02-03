@@ -24,13 +24,13 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: b40024f773291837932dc87a6b4e2f7b
           projectName: webstatic-cdn
-          directory: /
+          directory: ./
           # Optional: Enable this if you want to have GitHub Deployments triggered
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           # Optional: Switch what branch you are publishing to.
           # By default this will be the branch which triggered this workflow
           branch: main
           # Optional: Change the working directory
-          workingDirectory: /
+          workingDirectory: ./
           # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
           wranglerVersion: '3'
